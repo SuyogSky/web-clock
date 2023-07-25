@@ -4,32 +4,34 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>World Clock</title>
+    <title>Web Clock</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <script src="./js/index.js" defer></script>
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-4">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">World Clock</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html">World Clock</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./webpages/change-time.html">Other Zone</a>
+                        <a class="nav-link" href="./change-time.html">Other Zone</a>
                     </li>
                 </ul>
+                <label for="">Select Zone: </label>
+                <select class="form-select mx-2 zone-options" aria-label="Default select example" style="width: 250px">
+                </select>
             </div>
         </div>
     </nav>
@@ -39,7 +41,7 @@
             <h1 class="display-4">Current Time is: <span id="time"></span></h1>
             <hr class="my-4">
             <p>We are here to show you time for different countries.</p>
-            <a href="./webpages/change-time.html" class="btn btn-primary btn-lg">Browse Time</a>
+            <a href="#" class="btn btn-primary btn-lg change2">Browse Time</a>
         </div>
     </div>
 
